@@ -1,7 +1,11 @@
 Random password generator:
 
 deployed application link: https://joshmoran501.github.io/randomPassword/
+
 github repository link: https://github.com/joshmoran501/randomPassword
+
+![screencapture-127-0-0-1-5500-index-html-2022-05-13-23_55_24](https://user-images.githubusercontent.com/104108180/168409987-35e2eaef-7759-4339-90c6-375e1e673486.png)
+
 
 Acceptance Criteria:
 GIVEN I need a new, secure password
