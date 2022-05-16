@@ -23,17 +23,18 @@ function writePassword() {
 
   // Determine which characters to include
   var lowerPrompt = window.confirm("Include lowercase letters?")
-  console.log("lowercase= " + lowerPrompt)
+  console.log(`lowercase= ${lowerPrompt}`)
 
   var upperPrompt = window.confirm("Include uppercase letters?", "")
-  console.log("uppercase= " + upperPrompt)
+  console.log(`uppercase=  ${upperPrompt}`)
 
   var numberPrompt = window.confirm("Include numbers?", "")
-  console.log("numbers= " + numberPrompt)
+  console.log(`numbers=  ${numberPrompt}`)
 
-  var symbolPrompt = window.confirm("Include special characters?")
-  console.log("symbols= " + symbolPrompt)
+  var symbolPrompt = window.confirm("Include special characters?", "")
+  console.log(`symbols= ${symbolPrompt}`)
 
+  // Set initial characters as empty string
   var characters = ""
   
   // combine included characters into 1 string
@@ -41,7 +42,7 @@ function writePassword() {
   if (upperPrompt === true) {characters += upper};
   if (numberPrompt === true) {characters += numbers};
   if (symbolPrompt === true) {characters += symbols};
-  console.log("included characters: " + characters)
+  console.log(`included characters: ${characters}`)
 
   // Set initial password as empty string
   var password = ""
@@ -63,4 +64,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
